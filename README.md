@@ -1,64 +1,21 @@
-Modelo Predictivo para Estimar el Precio de las Viviendas en Iowa, EE.UU. y Bogotá, Colombia
+# Modelo Predictivo para Estimar el Precio de Viviendas
 
-Descripción del Proyecto
+Este proyecto tiene como objetivo desarrollar un modelo de regresión para predecir el precio de las viviendas en diferentes regiones, utilizando diversas características de las propiedades. Se han considerado dos conjuntos de datos: uno correspondiente al estado de Iowa, EE.UU., y otro a la ciudad de Bogotá, Colombia.  
 
-Una empresa está interesada en desarrollar un modelo predictivo para estimar el precio de las viviendas en el estado de Iowa, EE.UU., utilizando diversas características de las propiedades. Para ello, se dispone de un conjunto de datos con 2,930 registros que incluyen múltiples atributos de las viviendas.
+## 1. Predicción del Precio de Viviendas en Iowa  
 
-Adicionalmente, se replicó el mismo procedimiento para un conjunto de datos sobre viviendas en Bogotá, Colombia, con el objetivo de analizar el mercado inmobiliario en esta ciudad y evaluar la aplicabilidad del modelo en diferentes contextos.
+Se cuenta con un conjunto de datos que incluye **2,930 registros** de propiedades en Iowa, con múltiples atributos relevantes. El propósito es construir un modelo predictivo que permita estimar el precio de venta de las viviendas, facilitando la toma de decisiones estratégicas para inversiones inmobiliarias.  
 
-El objetivo principal de este proyecto es construir modelos de regresión que permitan predecir el precio de las viviendas y sirvan de apoyo en la toma de decisiones relacionadas con inversiones inmobiliarias en ambas ubicaciones.
+Durante el proceso, se exploraron distintas metodologías y modelos de regresión. Tras un análisis comparativo, se determinó que el modelo **Random Forest** ofrece la mejor precisión en la estimación de precios, presentando menores errores en comparación con otros enfoques. Este modelo proporciona predicciones más consistentes, con una mejor capacidad de explicar la variabilidad de los datos.  
 
-Fuentes de Datos
+## 2. Aplicación del Modelo a Bogotá, Colombia  
 
-Iowa, EE.UU.: Conjunto de datos con 2,930 registros sobre propiedades en el estado de Iowa.
+Siguiendo la misma metodología utilizada en Iowa, se replicó el procedimiento para un conjunto de datos de propiedades en **Bogotá, Colombia**. Este dataset contiene información clave sobre el mercado inmobiliario de la ciudad, lo que permite analizar factores que influyen en los precios de las viviendas.  
 
-Bogotá, Colombia: Conjunto de datos con información sobre viviendas en la capital colombiana.
+El análisis reveló una **alta dispersión en las variables clave**, como precio de venta, número de habitaciones, baños y costos administrativos. Se identificó la necesidad de aplicar técnicas avanzadas de **imputación y tratamiento de datos** para mejorar la calidad de las predicciones. Además, se observaron **diferencias significativas en los patrones de precios** según el tipo de propiedad, sector y estrato socioeconómico, lo que resalta la importancia de adaptar los modelos a las características específicas del mercado local.  
 
-Una descripción detallada de cada característica de las propiedades se encuentra en la fuente original del dataset.
+## 3. Conclusión  
 
-Proceso de Desarrollo
+Los resultados obtenidos evidencian que el uso de modelos avanzados de aprendizaje automático, como **Random Forest**, puede mejorar significativamente la precisión en la estimación de precios de viviendas. Sin embargo, es fundamental considerar las particularidades de cada mercado y ajustar el modelo en función de las características regionales.  
 
-El proceso de desarrollo del modelo predictivo incluyó las siguientes etapas:
-
-Exploración y Preprocesamiento de Datos:
-
-Análisis de valores faltantes y tratamiento de los mismos.
-
-Conversión de variables categóricas en formatos adecuados.
-
-Detección y eliminación de valores atípicos según la distribución de las variables.
-
-División del Conjunto de Datos:
-
-Separación de los datos en conjuntos de entrenamiento y prueba.
-
-Selección y Entrenamiento del Modelo:
-
-Evaluación de distintos modelos de regresión, incluyendo regresión lineal, regresión polinómica, KNN y Random Forest.
-
-Optimización de hiperparámetros para mejorar el desempeño del modelo.
-
-Evaluación del Modelo:
-
-Comparación del desempeño de los modelos mediante métricas de evaluación.
-
-Análisis de los resultados obtenidos y ajuste del modelo seleccionado.
-
-Resultados y Predicciones
-
-Iowa, EE.UU.
-
-Tras el entrenamiento del modelo Random Forest, se generó un DataFrame con los valores reales y las predicciones:
-
-
-Bogotá, Colombia
-
-El análisis de los datos de Bogotá evidenció una alta dispersión en variables como precio_venta, habitaciones, baños y administración. Se aplicaron técnicas de imputación con la mediana para algunas variables, aunque esto puede no capturar completamente la variabilidad en cada zona y tipo de propiedad.
-
-Se entrenó el modelo Random Forest y se analizaron las predicciones, encontrando que factores como el tipo de propiedad, el sector y el estrato influyen en la precisión del modelo. Los resultados indicaron que la variabilidad en los datos de Bogotá requería ajustes adicionales para mejorar la estimación de precios.
-
-Conclusión
-
-El modelo entrenado en Iowa ofrece predicciones que pueden ser utilizadas para evaluar el valor de propiedades en ese estado. En el caso de Bogotá, la dispersión de los datos sugiere que se deben considerar estrategias adicionales para mejorar la precisión del modelo.
-
-Las mejoras futuras pueden incluir la optimización de hiperparámetros adicionales, la incorporación de más características en el análisis y la aplicación de técnicas avanzadas de modelado.
+Este proyecto proporciona una **base sólida** para la implementación de modelos predictivos en el sector inmobiliario, facilitando la toma de decisiones estratégicas en la compra y venta de propiedades.  
